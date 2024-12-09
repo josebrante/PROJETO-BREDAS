@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style_perfil.css">
+    <title>Perfil do Usuário</title>
+</head>
+<body>
+    <header class="top-menu">
+        <div class="header-container">
+            <a href="#" class="logo">
+                <img src="../img/logos/princ_logo.png" alt="Logo" class="logo-image"> STREETS
+            </a>
+            <nav class="menu-links">
+                <a href="../index.html">Home</a>
+                <a href="../pages/explorar.html">Explorar</a>
+                <a href="../pages/fav.html">Favoritos</a>
+                <a href="../pages/carrinho.html">Carrinho</a>
+                <strong></strong><a href="#">Perfil</a></strong>
+            </nav>
+            <div class="header-icons">
+                <div class="profile-menu">
+                    <div class="dropdown-menu" id="profile-dropdown">
+                        <a href="#">Editar Perfil</a>
+                        <a href="#">Configuração</a>
+                        <a href="#">Sair</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        <section class="profile-info">
+            <div class="profile-header">
+                <img src="../img/perfil.png" alt="Foto do Usuário" class="profile-photo">
+                <h1>Nome do Usuário</h1>
+                <p>Email: usuario@exemplo.com</p>
+            </div>
+            <div class="profile-details">
+                <h2>Informações Pessoais</h2>
+                <p><strong>Nome Completo:</strong> Nome do Usuário</p>
+                <p><strong>Data de Nascimento:</strong> 01/01/1990</p>
+                <p><strong>Endereço:</strong> Rua Exemplo, 123, Cidade, Estado</p>
+            </div>
+        </section>
+        <section class="order-section">
+            <h2>Pedidos Recentes</h2>
+            <div class="carousel-wrapper">
+                <button class="carousel-button prev" onclick="scrollCarousel(this, -1)">&#10094;</button>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="carousel-images">
+                            <div class="order-number">Pedido #1</div>
+                            <img src="../img/tenis/qix.png" alt="Tênis QIX">
+                        </div>
+                        <h3>Tênis QIX</h3>
+                        <p>R$ 759,99</p>
+                        <p>Status: Entregue</p>
+                    </div>
+                    <div class="card">
+                        <div class="carousel-images">
+                            <div class="order-number">Pedido #2</div>
+                            <img src="../img/tenis/JordanSpizikeLow.png" alt="Tênis QIX">
+                        </div>
+                        <h3>Tênis JordanSpizi</h3>
+                        <p>R$ 899,99</p>
+                        <p>Status: Entregue</p>
+                    </div>
+                    <div class="card">
+                        <div class="carousel-images">
+                            <div class="order-number">Pedido #3</div>
+                            <img src="../img/tenis/EraBlackBlack.png" alt="Tênis QIX">
+                        </div>
+                        <h3>Tênis EraBlack</h3>
+                        <p>R$ 356,00</p>
+                        <p>Status: Entregue</p>
+                    </div>
+                    <div class="card">
+                        <div class="carousel-images">
+                            <div class="order-number">Pedido #4</div>
+                            <img src="../img/tenis/SuperstarADVxUnity.png" alt="Tênis QIX">
+                        </div>
+                        <h3>Tênis SuperstarADV</h3>
+                        <p>R$ 555,99</p>
+                        <p>Status: Entregue</p>
+                    </div>
+                    <!-- Adicione mais pedidos conforme necessário -->
+                </div>
+                <button class="carousel-button next" onclick="scrollCarousel(this, 1)">&#10095;</button>
+            </div>
+        </section>
+        
+        
+    </main>
+    <button class="chat-btn" id="chatBtn" onclick="openChatbot()">
+        <img src="../img/chatbot.png" alt="Chat">
+    </button>
+    <script src="../js/perfil.js"></script>
+</body>
+</html>

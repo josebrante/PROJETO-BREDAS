@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f2f5;
+    overflow: hidden;
+}
+
+.cadastro-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+    width: 90%;
+    height: 90%;
+    max-height: 600px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    overflow-y: auto; /* Permite rolagem vertical */
+}
+
+.cadastro-logo-section {
+    flex: 1;
+    min-width: 300px;
+    background-color: #CDCDCE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.cadastro-form-section {
+    flex: 1;
+    min-width: 300px;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.formulario-cadastro {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.formulario-cadastro h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.formulario-cadastro p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.formulario-cadastro label {
+    display: block;
+    text-align: left;
+    margin-bottom: 8px;
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.formulario-cadastro input[type="text"],
+.formulario-cadastro input[type="tel"],
+.formulario-cadastro input[type="email"],
+.formulario-cadastro input[type="password"],
+.formulario-cadastro input[type="date"] { /* Adicionado tipo date */
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.formulario-cadastro input:focus {
+    border-color: #4700BC;
+    outline: none;
+}
+
+.btn-cadastrar {
+    width: 100%;
+    padding: 10px;
+    background-color: #4700BC;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 15px;
+}
+
+.btn-cadastrar:hover {
+    background-color: #451297;
+}
+
+.signup {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+.signup a {
+    color: #4700BC;
+    text-decoration: none;
+}
+
+.signup a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .cadastro-container {
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+
+    .cadastro-logo-section,
+    .cadastro-form-section {
+        width: 100%;
+        padding: 20px;
+        height: 50%;
+    }
+
+    .logo img {
+        max-width: 200px;
+    }
+
+    .formulario-cadastro {
+        max-width: 100%;
+    }
+}

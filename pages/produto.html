@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike Air Force 1 '07</title>
+    <link rel="stylesheet" href="../css/style_produto.css"> 
+    <link rel="stylesheet" href="../css/style_index.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="../js/javascpt.js"></script>
+</head>
+<body>
+    <header class="top-menu">
+        <div class="header-container">
+            <a href="../index.html" class="logo">
+                <img src="../img/logos/princ_logo.png" alt="Logo" class="logo-image"> Streets
+            </a>
+            <nav class="menu-links">
+                <a href="../index.html">Home</a>
+                <a href="../pages/explorar.html">Explorar</a>
+                <a href="../pages/fav.html">Favoritos</a>
+                <a href="../pages/carrinho.html">Carrinho</a>
+                <a href="../pages/perfil.html">Perfil</a>
+            </nav>
+            <div class="header-icons">
+                <input type="text" placeholder="Buscar" class="search-bar">
+                <div class="profile-menu">
+                    <img src="../img/perfil.png" alt="Foto do Usuário" id="profile-icon" class="user-photo">
+                    <div class="dropdown-menu" id="profile-dropdown">
+                        <a href="../pages/perfil.html">Editar Perfil</a>
+                        <a href="#">Configuração</a>
+                        <a href="../pages/login.html">Sair</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <section class="product-gallery">
+            <div class="main-image">
+                <img src="../img/tenis/AirForce1'07.png" alt="Produto principal" id="main-image">
+            </div>
+            <div class="thumbnails">
+                <img src="../img/tenis/AirForce1'07.png" alt="Imagem 1" onclick="changeImage(this)">
+                <img src="../img/tenis/AirForce1'07_2.png" alt="Imagem 1" onclick="changeImage(this)">
+                <img src="../img/tenis/AirForce1'07_3.png" alt="Imagem 2" onclick="changeImage(this)">
+                <img src="../img/tenis/AirForce1'07_4.png" alt="Imagem 4" onclick="changeImage(this)">
+            </div>
+        </section>
+        <section class="product-info">
+            <h1>Air Force 1 '07</h1>
+            <div class="rating">
+                <span class="stars">★★★★★</span>
+                <a href="#">Ver avaliações (62)</a>
+            </div>
+            <div class="price">
+                R$ 759,99 no Pix <span class="original-price">R$ 1.199,99</span>
+            </div>
+            <p class="installments">ou R$ 799,99 em até 10x sem juros</p>
+            <p><b>Selecione um tamanho:</b></p>
+            <div class="sizes">
+                <button>33</button>
+                <button>34</button>
+                <button>35</button>
+                <button>36</button>
+                <button>37</button>
+                <button>38</button>
+                <button>39</button>
+            </div>
+            <div class="button-group">
+                <button class="btn-buy" id="buy-btn">Comprar</button>
+                <button class="btn-favorite" id="favorite-btn" onclick="toggleFavorite()">
+                    <img src="../img/heart.png" alt="Favorito" id="favorite-icon">
+                </button>
+                <button class="btn-cart" id="cart-btn" onclick="toggleCart()">
+                    <img src="../img/shopping-cart.png" alt="Carrinho" id="cart-icon">
+                </button>
+            </div>
+            <div class="product-description">
+                <h3>Descrição do Produto</h3>
+                <p>
+                    O brilho perdura no Nike Air Force 1 ’07, o tênis original do basquete que dá um toque de inovação naquilo que você conhece bem: sobreposições costuradas e duráveis, acabamentos simples e a quantidade perfeita de brilho para fazer você se destacar.
+                </p>
+                <h3>Detalhes</h3>
+                <ul>
+                    <li>Lingua em nylon para maior conforto e Espuma mais grossa com elásticos internos para estabilizar a
+                        lingueta.</li>
+                    <li>Espuma do colarinho mais grossa para maior conforto e proteção.</li>
+                    <li>2 Fat Laces em poliéster de 18mm, o segundo atacador vem na cor do cabedal.</li>
+                    <li>Camurça natural de alta qualidade</li>
+                </ul>
+                <h3>Especificações</h3>
+                <p>Peso: 1 kg (aprox.)</p>
+                <p>Material do cabedal: Camurça</p>
+                <p>Tipo de ajuste: Cadarço</p>
+            </div>
+        </section>
+    </div>
+    <section class="product-section">
+        <h2>Produtos Semelhantes</h2>
+        <div class="carousel-wrapper">
+           <button class="carousel-button prev" onclick="scrollCarousel(this, -1)">&#10094;</button>
+           <div class="card-container">
+              <div class="card">
+                 <div class="carousel-images">
+                    <img src="../img/tenis/SuperstarADVxUnity.png" alt="Superstar ADV x Unity" class="active">
+                 </div>
+                 <h3>Superstar ADV x Unity</h3>
+                 <p>$60.00</p>
+                 <p class="estrela">☆4.9</p>
+              </div>
+              <div class="card">
+                 <div class="carousel-images">
+                    <img src="../img/tenis/Sk8-HiBlackBlackWhite.png" alt="Sk8-Hi Black Black White" class="active">
+                 </div>
+                 <h3>Sk8-Hi Black Black White</h3>
+                 <p>$60.00</p>
+                 <p class="estrela">☆4.9</p>
+              </div>
+              <div class="card">
+                 <div class="carousel-images">
+                    <img src="../img/tenis/MidcityMid.png" alt="Midcity Mid" class="active">
+                 </div>
+                 <h3>Midcity Mid</h3>
+                 <p>$60.00</p>
+                 <p class="estrela">☆4.9</p>
+              </div>
+              <div class="card">
+                 <div class="carousel-images">
+                    <img src="../img/tenis/NikeSBZoomBlazerLowProGT.png" alt="Nike SB Zoom Blazer Low Pro GT" class="active">
+                 </div>
+                 <h3>Nike SB Zoom Blazer Low Pro GT</h3>
+                 <p>$607.99</p>
+                 <p class="estrela">☆5.0</p>
+              </div>
+              <div class="card">
+                 <div class="carousel-images">
+                    <img src="../img/tenis/OldSkoolBlackGum.png" alt="Old Skool Black Gum" class="active">
+                 </div>
+                 <h3>Old Skool Black Gum</h3>
+                 <p>$60.00</p>
+                 <p class="estrela">☆4.9</p>
+              </div>
+           </div>
+           <button class="carousel-button next" onclick="scrollCarousel(this, 1)">&#10095;</button>
+        </div>                 
+     </section>
+     <div class="chatbot-popup" id="chatbotPopup" onclick="openChatSupport()" style="display: none;">
+        <img src="../img/icons/chat-icon.png" alt="Chatbot" class="chat-icon">
+    </div>    
+    <footer>
+        <div class="txt-rodape">
+           <img src="../img/logos/princ_logo.png" class="logo-street" alt="logo street">
+           <p>Na Streets, respiramos a cultura das ruas e transformamos essa energia em moda que<br>fala a sua língua. Nossa loja é mais do que um simples e-commerce, é um ponto de<br>encontro para os amantes do streetwear que buscam expressar sua identidade através<br>de peças que combinam conforto, qualidade e as últimas tendências do asfalto.</p>
+           <ul class="lista-imagem-rodape">
+              <li><img src="../img/logos/whatsap.png" alt="logo whatsapp"></li>
+              <li><img src="../img/logos/instagram.png" alt="logo instagram"></li>
+              <li><img src="../img/logos/facebook.png" alt="logo facebook"></li>
+           </ul>
+        </div>
+     </footer>
+</body>
+</html>

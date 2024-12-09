@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.top-menu {
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.logo-image {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.menu-links {
+    display: flex;
+    flex: 1;
+    justify-content: center; 
+}
+
+.menu-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.search-bar {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 15px;
+    font-size: 14px;
+}
+
+.login-button {
+    display: inline-block; 
+    background-color: #4c00ff;
+    color: #fff;
+    text-decoration: none; 
+    padding: 7px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 10px;
+    transition: background-color 0.3s;
+    margin-left: 15px; 
+}
+
+.login-button:hover {
+    background-color: #333; 
+}
+
+.icon-link {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.icon-link img {
+    width: 24px;
+    height: 24px;
+}
+
+main {
+    flex: 1;
+    margin-top: 80px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.product-section {
+    margin-bottom: 40px;
+}
+
+.product-section h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    color: #333;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.section-subtitle {
+    font-size: 16px;
+    color: #666;
+    text-align: left;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.carousel-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.card-container {
+    display: flex;
+    overflow: hidden;
+    gap: 20px;
+    padding: 20px;
+    scroll-snap-type: x mandatory;
+    width: 100%;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    width: 250px;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+}
+
+.carousel-images img {
+    display: none;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.carousel-images img.active {
+    display: block;
+}
+
+.carousel-button {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-button:hover {
+    background-color: rgba(255, 255, 255, 1);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-button.prev {
+    left: 15px;
+}
+
+.carousel-button.next {
+    right: 15px;
+}
+
+.estrela {
+    color: #4c00ff;
+}
+
+footer {
+    background-color: #E8E8E8;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    position: relative;
+    clear: both;
+    margin-top: auto;
+}
+
+.logo-street {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.lista-imagem-rodape {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.lista-imagem-rodape li {
+    margin: 10px;
+}
+.profile-icon {
+    display: inline-block;
+    width: 40px; 
+    height: 40px;
+    border-radius: 50%; 
+    overflow: hidden; 
+}
+
+.profile-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
